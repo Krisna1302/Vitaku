@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira+Stencil+One&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eaeaea !important; /* Updated background color */
+    transition: background-color 0.5s ease; /* Smooth transition for background */
+}
+
+.wrapper {
+    width: 1300px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 50px;
+    float: left;
+    font-family: "Saira Stencil One", sans-serif;
+    color: #48b802;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #393E46;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.home-img {
+    max-width: 40%;
+    height: auto;
+}
+
+.about-img {
+    max-width: 50%;
+    height: auto;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #347928;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 80px;
+    font-size: 45px !important;
+    margin-bottom: 20px;
+    color: #347928 !important;
+    width: 100%;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+a.tbl-biru {
+    background: #48b802;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+a.tbl-biru:hover {
+    background: #92d55a;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.tbl-ijo {
+    background: #92d55a;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-ijo:hover {
+    background: #48b802;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.konten {
+    font-family: "rubik", sans-serif;
+    font-weight: 450;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.map {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #347928;
+}
+
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.namecard {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */ 
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the image */
+    opacity: 0.5; /* Set low opacity for the background */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Changed to 100% for responsiveness */
+    max-width: 400px; /* Set a max-width for larger screens */
+    margin: 20px auto; /* Center the cards with auto margins */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    background-color: #ffffff;
+}
+
+.namecard:hover {
+    background-color: #c0c0c0; /* Change background on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.tengahkartu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kiri, .kanan {
+    width: 50%;
+}
+
+.kartuaja h1 {
+    color: #347928;
+    position: relative;
+    margin-left: 20px; /* Adjusted for better mobile view */
+    margin-top: 10px; /* Adjusted for better mobile view */
+    font-size: 28px; /* Reduced font size for mobile view */
+    transition: transform 0.3s ease; /* Added transition */
+}
+
+.kartuaja h1:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.kartuaja p {
+    left: 0;
+    position: relative;
+    margin-left: 20px; /* Adjusted for better mobile view */
+    font-size: 14px; /* Reduced font size for mobile view */
+}
+
+.profile img {
+    width: 80%; /* Adjusted for better mobile view */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 10px; /* Adjusted for better mobile view */
+    margin-left: 10px; /* Adjusted for better mobile view */
+    border-radius: 50%;
+}
+
+.details {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.details h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.carousel-item {
+    margin-left: 0px;
+    display: block;
+}
+
+.carousel-inner {
+    padding: 1em;
+    margin-left: 5px;
+}
+
+.carousel-control-prev {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon {
+    color: #000000;
+}
+
+.contact {
+    background-color: #393E46;
+    padding: 150px;
+    padding-top: 40px;
+    padding-bottom: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease; /* Added opacity transition */
+    max-height: 0px; /* Adjust based on content */
+    opacity: 1; /* Default opacity */
+    margin-bottom: 50px;
+}
+
+.footer-section {
+    width: 100%;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    color: #e1e1e1;
+}
+
+h3 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Updated font family */
+    font-weight: 700; /* Adjusted weight */
+    font-size: 28px; /* Slightly smaller */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #4CAF50; /* Updated color */
+    width: 100%;
+    line-height: 40px; /* Adjusted line height */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+h3:hover {
+    color: #2E7D32; /* Darker color on hover */
+}
+
+.fc {
+    color: white;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-tutor {
+        width: 50%;
+    }
+
+    .kartu-partner {
+        width: 50%;
+    }
+
+    .footer {
+        width: 20%;
+        padding-left: 0px;
+    }
+
+    .contact {
+        padding-left: 0%;
+        padding-bottom: 40%;
+    }
+
+    .fc {
+        font-size: 10px; 
+    }
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #3f72af;
+}
+
+@media screen and (max-width: 991.98px) {
+    .logo a {
+        display: inline;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+    nav .menu {
+        display: none;
+    }
+    nav .menu.active {
+        display: flex;
+    }
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid #333333;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
